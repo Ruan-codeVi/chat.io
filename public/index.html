@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="logo">
+                <i class="fab fa-facebook-messenger"></i>
+                <h3>Chat.io</h3>
+            </div>
+            <p id="seu-nome">Seu Nome</p>
+        </div>
+<!------------------------------------------------------>
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="linha-mensagem outraPessoa-mensagem">
+                            <!-- <div class="mensagem-titulo">
+                                👻<span>Bot</span>
+                            </div>
+                            <div class="mensagem-text">
+                                Ola.
+                            </div>
+                            <div class="mensagem-timer">
+                                Agosto 9
+                            </div> -->
+                        </div>
+                        <div class="linha-mensagem voce-mensagem">
+                            <!-- <div class="mensagem-titulo">
+                                👻<span>Eu</span>
+                            </div>
+                            <div class="mensagem-text">
+                               ok.
+                            </div>
+                            <div class="mensagem-timer">
+                                Agosto 9
+                            </div> -->
+                        </div>
+                
+                    </div>
+                </div>
+<!---------------------------------------------------->
+                <form class="msg-text">
+                    <input type="text" name="msg" id="msg" 
+                    placeholder="Escreva sua mensagem aqui..." autocomplete="off">
+                    <button id="btn-enviar">
+                        <i class="fas fa-paper-plane">Enviar</i>
+                    </button>
+                </form>
+            </div>
+        
+        
+        </div>
+
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
